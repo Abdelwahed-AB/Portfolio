@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&family=Roboto:wght@500&display=swap');
+
+:root{
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
+
+    --color-orange: hsl(10, 100%, 58%);
+    --color-navy: hsl(206, 72%, 11%);
+    --color-navy-highlight: hsl(206, 72%, 12%);
+    --color-navy-light: hsl(215, 26%, 40%);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+/*Nav bar*/
+.navbar {
+    width: 5rem;
+    height: 100vh;
+
+    position: fixed;
+
+    background-color: var(--color-navy);
+
+    transition: width 200ms ease;
+}
+
+.navbar-nav{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-content: center;
+}
+
+.nav-item{
+    width: 100%;
+    border: 0;
+    transition: 200ms ease;
+}
+.nav-item:first-child{
+    margin-bottom: auto;
+}
+
+.nav-link{
+    display: flex;
+    align-items: center;
+    height: 5rem;
+
+    color: var(--color-navy-light);
+
+    text-decoration: none;
+}
+.nav-link svg{
+    min-width: 2rem;
+    margin: 0 1.3rem;
+
+    fill: var(--color-navy-light);
+}
+.logo svg{
+    transition: 200ms ease;
+}
+
+.link-text{
+    display: none;
+}
+
+.navbar:hover{
+    width: 10rem;
+}
+.navbar:hover .link-text{
+    display: block;
+}
+.navbar:hover .logo svg{
+    transform: translateX(100%);
+}
+
+.nav-item:hover{
+    background-color: var(--color-navy-highlight);
+    border-left: 0.2rem solid var(--color-orange);
+}
+
+/*Nav bar mobile*/
+
+/*Main*/
+main{
+    color: var(--color-navy);
+
+    margin-left: 5rem;
+    padding: 1rem;
+}
