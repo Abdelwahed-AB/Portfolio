@@ -1,6 +1,6 @@
 # Portfolio
 
-- [ ] Create nav bar
+- [x] Create nav bar
 - [ ] Create Hero section
 - [ ] Create About me section
 - [ ] Create Projects section
