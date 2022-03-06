@@ -61,6 +61,7 @@ main{
 .nav-link{
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 5rem;
 
     color: var(--color-navy-light);
@@ -97,6 +98,9 @@ main{
 
     .nav-link{
         justify-content: center;
+    }
+    .nav-item{
+        transition: none;
     }
     .nav-item:hover{
         background-color: var(--color-navy-highlight);
