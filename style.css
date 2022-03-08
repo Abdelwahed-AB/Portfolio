@@ -9,6 +9,9 @@
     --color-navy-highlight: hsl(206, 72%, 12%);
     --color-navy-light: hsl(215, 26%, 40%);
     --color-background: hsl(215, 26%, 89%);
+    --color-background-2: hsl(215, 26%, 75%);
+
+    scroll-behavior: smooth;
 }
 
 body{
@@ -113,7 +116,9 @@ main{
     .nav-item:hover .link-text{
         color: var(--color-orange);
     }
-
+    .logo{
+        display: none;
+    }
     main{
         margin-bottom: 5rem;
         margin-left: 0;
@@ -226,4 +231,29 @@ main{
         transform: translateX(-1.5rem);
         border-radius: 50%;
     }
+}
+
+/*About me*/
+
+.about{
+    height: 100vh;
+    background-color: var(--color-background-2);
+
+    text-align: center;
+
+    padding: 5em;
+    box-sizing: border-box;
+}
+
+/*Projects*/
+
+.projects{
+    min-height: 100vh;
+    background-color: var(--color-background);
+}
+
+/*Contact me*/
+.contact{
+    height: 100vh;
+    background-color: var(--color-background-2);
 }
