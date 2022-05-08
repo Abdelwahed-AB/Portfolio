@@ -12,6 +12,7 @@
     --color-background-2: hsl(215, 26%, 75%);
 
     scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 
 body{
@@ -182,12 +183,11 @@ main{
     display: flex;
     align-items: center;
 }
-.circle{
+.perslogo{
     width: 20rem;
     height: 20rem;
     
-    background-color: var(--color-orange);
-    border-radius: 50%;
+    fill: var(--color-orange);
     
     display: inline-block;
     z-index: 0;
@@ -224,12 +224,12 @@ main{
         flex-wrap: wrap-reverse;
     }
     
-    .hero-img:hover div{
-        transform: translateX(1rem) scale(1.3);
+    .hero-img:hover svg{
+        transform: scale(1.1);
     }
     .hero-img:hover img{
-        transform: translateX(-1.5rem);
-        border-radius: 50%;
+        transform: translateX(8rem);
+        opacity: 0;
     }
 }
 
@@ -314,4 +314,45 @@ main{
 .contact{
     height: 100vh;
     background-color: var(--color-background-2);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.contact .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+
+    height: auto;
+}
+
+.contact-card{
+    width: 22rem;
+    height: 15rem;
+    background-color: var(--color-background);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.contact-card a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: var(--color-navy);
+    transition: 400ms ease;
+}
+.contact-card svg{
+    width: 3rem;
+    fill: var(--color-navy-light);
+}
+
+.contact-card a:hover{
+    color: var(--color-orange);
 }
