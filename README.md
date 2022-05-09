@@ -4,3 +4,4 @@
 - [x] Create Hero section
 - [ ] Create About me section
 - [x] Create Projects section
+- [ ] Create Skills section
